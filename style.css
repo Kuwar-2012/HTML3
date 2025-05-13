@@ -1,0 +1,19 @@
+*{
+    font-size: 30px;
+    font-weight: 500;
+}
+h3{
+    color:aqua;
+}
+h4{
+    color:lime
+}
+.myclass{
+color: blueviolet;
+}
+#myid{
+    color:aliceblue
+}
+h5,p{
+    color:antiquewhite
+}
