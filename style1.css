@@ -1,0 +1,59 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(52, 215, 213);
+    color: whitesmoke;
+
+}
+h1{
+    color:aquamarine
+}
+
+/*attribute selector*/
+a {
+    color: blue;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+/*child selector*/
+ul>li {
+    font-weight: bold;
+}
+
+/*sibling selector*/
+h1+p {
+    background-color: brown;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*:hover pseudo class*/
+ul li:hover{
+    color: chocolate;
+}
+/*:nth-child pseudo class*/
+ul li:nth-child(3){
+    background-color: darkgreen;
+}
+
+/*:not (selector) psuedo class*/
+p:not(:first-of-type) {
+    text-decoration: underline;
+
+}
+/*:before pseudo element*/
+ul li::before {
+    content:"👨🏻‍💻";
+}
+/*::after pseudo element*/
+a::after {
+    content:🙇🏻‍♂️;
+}
+
+/*first-letter pseudo element*/
+p::first-letter{
+    font-size: 200%;
+    color: crimson;
+}
