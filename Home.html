@@ -38,15 +38,14 @@ body{
         <a class="active" href="Home.html">
             Home
         </a>
+        <a href="Sales.html">
+            Sales
         </a>
         <a href="Mens.html">
             Mens
         </a>
         <a href="Womens.html">
             Womens
-        </a>
-        <a href="Sales.html">
-            Sales
         </a>
         <a href="AboutUs.html">
             About Us
@@ -55,5 +54,30 @@ body{
     <h1 >
     Welcome To Kuwaryad's Website
     </h1>
+    <div>
+        <img class="mySlides" src="City.jpg" style="height:500px;width:400px;">
+        <img class="mySlides" src="mclaren.jpg" style="height:500px;width:400px;">
+        <img class="mySlides" src="benz.jpeg" style="height:500px;width:400px;">
+        <img class="mySlides" src="pikachu.jpeg" style="height:500px;width:400px;">
+    </div>
+    <script>
+        var myHome=0;
+        carousel();
+
+        function carousel(){
+            var i;
+            var x=document.getElementsByClassName("mySlides");
+
+            for (i=0;i<x.length;i++){
+                x[i].style.display="none";
+            }
+            myHome++;
+            if(myHome>x.length){
+                myHome=1
+            }
+            x[myHome-1].style.display="block";
+            setTimeout(carousel,3000);
+        }
+    </script>
 </body>
 </html>
