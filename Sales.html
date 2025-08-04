@@ -59,6 +59,30 @@
     <h1>
         Here Are All The Sales!
     </h1>
-</body>
+    <div>
+        <img class="mySlides" src="Sales.png" style="height:500px;width:400px;">
+        <img class="mySlides" src="wintersale.jpeg" style="height:500px;width:400px;">
+        <img class="mySlides" src="70sale.jpeg" style="height:500px;width:400px;">
+        <img class="mySlides" src="images.jpeg" style="height:500px;width:400px;">
+    </div>
+    <script>
+        var myHome = 0;
+        carousel();
 
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myHome++;
+            if (myHome > x.length) {
+                myHome = 1
+            }
+            x[myHome - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+</body>
 </html>
