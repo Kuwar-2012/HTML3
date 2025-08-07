@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <title>
+        BritishBros
+    </title>
+    <style>
+        body {
+            margin: 0;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: beige;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color:rgb(24, 24, 96);
+        }
+
+        .topnav a {
+            float: left;
+            color:rgb(148, 14, 14);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            color: rgb(24, 24, 96);
+            background-color: beige;
+        }
+
+        .topnav a:active {
+            color:rgb(24, 24, 96);
+            background-color:beige;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: beige;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="BritishBros.html">
+            Home
+        </a>
+        <a href="Sales2.html">
+            Sales
+        </a>
+        <a href="Mens2.html">
+            Mens
+        </a>
+        <a href="Womens2.html">
+            Womens
+        </a>
+    </div>
+    <h1 style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; color: rgb(24, 24, 96);">
+        Welcome To BritishBros
+    </h1>
+    <div>
+        <img class="mySlides" src="shopmens.jpeg" style="height:500px;width:400px;">
+        <img class="mySlides" src="womens.jpeg" style="height:500px;width:400px;">
+        <img class="mySlides" src="jackets.jpeg" style="height:500px;width:400px;">
+        <img class="mySlides" src="exclusive.jpeg" style="height:500px;width:400px;">
+    </div>
+    <script>
+        var myBritishBros = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myBritishBros++;
+            if (myBritishBros > x.length) {
+                myBritishBros = 1
+            }
+            x[myBritishBros - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+    <h4 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(24, 24, 96);">
+        
+        MORE CHOICE, MORE RUNNING
+    </h4> <br> <br>
+    <div>
+        <img class="mySlides2" src="shoespairperfect.jpeg" style="height:500px;width:400px;">
+        <img class="mySlides2" src="onlinestore.jpeg" style="height:500px;width:400px;">
+        <img class="mySlides2" src="jordans.jpeg" style="height:500px;width:400px;">
+    </div>
+    <script>
+        var myBritishBros = 0;
+        carousel2();
+
+        function carousel2() {
+            var i;
+            var x = document.getElementsByClassName("mySlides2");
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myBritishBros++;
+            if (myBritishBros > x.length) {
+                myBritishBros = 1
+            }
+            x[myBritishBros - 1].style.display = "block";
+            setTimeout(carousel2, 3000);
+        }
+    </script>
+    <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="Home.html" style="background-color: aqua;">
+                1
+            </a>
+        <li class="page-item">
+            <a class="page-link" href="Sales2.html">
+                2
+            </a>
+        <li class="page-item">
+            <a class="page-link" href="Mens2.html">
+                3
+            </a>
+        <li class="page-item">
+            <a class="page-link" href="Womens2.html">
+                4
+            </a>
+        <li class="page-item">
+            <a class="page-link" href="Sales2.html">
+                Next
+            </a>
+    </ul>
+    </div> <br>
+    </center>
+    <div class="footer">
+        <p>
+            All @copyrights reserved by Kuwaryad Sandhu
+        </p>
+    </div>
+</body>
+
+</html>
